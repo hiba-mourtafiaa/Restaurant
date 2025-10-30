@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | BiteMe Restaurant</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="img/36.png" alt="Logo" />
+        <h1>BiteMe</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="AboutUs.html">ABOUT US</a></li>
+          <li><a href="Menu.html">MENU</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="login.html" class="active">ACCOUNT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="login">
+    <h2><img src="img/16.png" alt="Leaf" class="leaf-icon"> Log In</h2>
+    <p class="login-intro">
+      Welcome back! Please log in to access your account and exclusive offers.
+    </p>
+
+<div class="login-container">
+  <form class="login-form">
+    <input type="email" placeholder="Email" required />
+    <input type="password" placeholder="Password" required />
+    <label class="checkbox">
+      <input type="checkbox" /> Remember me
+    </label>
+    <button type="submit" class="login-btn">Log In</button>
+  </form>
+
+  <div class="login-info">
+    <h3>Don't have an account?</h3>
+    <a href="register.html" class="register-link">Register</a>
+  </div>
+</div>
+
+  </section>
+
+  <footer class="contacts">
+    <h1><img src="img/16.png" alt="Leaf" class="footer-leaf"> Contacts</h1>
+    <div class="contact-info">
+      <div class="contact-block">
+        <div class="icon-label">
+          <i class="fas fa-map-marker-alt"></i>
+          <span class="label">LOCATION</span>
+        </div>
+        <div class="contact-text">Morocco</div>
+      </div>
+      <div class="contact-block">
+        <div class="icon-label">
+          <i class="fas fa-phone"></i>
+          <span class="label">PHONE</span>
+        </div>
+        <div class="contact-text phone">+212 648973038</div>
+      </div>
+      <div class="contact-block">
+        <div class="icon-label">
+          <i class="fas fa-envelope"></i>
+          <span class="label">EMAIL</span>
+        </div>
+        <div class="contact-text">mourtafiaah@gmail.com</div>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <div class="site-footer">
+      <p>&copy; 2025 Mourtafiaa Hiba. All rights reserved | 
+        <a href="/privacy-policy">Privacy Policy</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.login-form').addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Logged in successfully!');
+    });
+  </script>
+
+</body>
+</html>

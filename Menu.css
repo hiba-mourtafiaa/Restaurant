@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  background-color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.navbar a:hover {
+  color: #ffc107;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.menu-section {
+  padding: 30px 20px;
+  text-align: center;
+  color: white;
+  font-size: large;
+}
+
+.menu-image {
+  max-width: 340px; 
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.Products-section {
+  background: #000000;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+  font-size: large;
+}
+
+.leaf-icon {
+  width: 49px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 40px;
+}
+
+.menu-item {
+  position: relative;
+  background-color: #1c1c1c;
+  color: #827f7f;
+  border: 2px solid #ffc107;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.03);
+}
+
+.info {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  z-index: 1;
+}
+
+.menu-item:hover .info {
+  opacity: 0;
+}
+
+.hover-content {
+  position: absolute;
+  inset: 0;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.menu-item:hover .hover-content {
+  opacity: 1;
+}
+
+.hover-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.price {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffc107;
+  padding: 6px 14px;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-radius: 20px;
+  z-index: 3;
+}
+
+.info h3 {
+  font-size: 1.3em;
+  color: #ffc107;
+  margin-bottom: 22px;
+  padding: 0;
+}
+
+.info p {
+  font-size: 1em;
+  color: #aaa;
+  line-height: 1.5;
+}
+
+.contacts {
+  background-color: #000;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.contacts h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.contact-block {
+  text-align: left;
+}
+
+.icon-label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #ffc107;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.icon-label i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.label {
+  text-transform: uppercase;
+}
+
+.contact-text {
+  color: white;
+  font-size: 16px;
+}
+
+.phone {
+  color: #ffc107;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contact-text {
+  color: white;
+  font-size: 16px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #ffc107;
+  margin: 0 12px;
+  font-size: 22px;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+
+.site-footer {
+  background-color: #010101;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.site-footer a {
+  color: #ffc107; 
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+@media (max-width: 768px) {
+  .site-footer {
+    font-size: 0.8rem;
+    padding: 1rem ;
+  }
+}
