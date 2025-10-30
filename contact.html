@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | BiteMe Restaurant</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="navbar">
+    <div class="logo">
+      <img src="img/36.png" alt="Logo" />
+      <h1>BiteMe</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="AboutUs.html">ABOUT US</a></li>
+        <li><a href="Menu.html">MENU</a></li>
+        <li><a href="contact.html" class="active">CONTACT</a></li>
+        <li><a href="register.html">ACCOUNT</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="contact">
+  <h2><img src="img/16.png" alt="Leaf" class="leaf-icon"> Get In Touch</h2>
+  <p class="contact-intro">
+    We'd love to hear from you! Whether you’re booking an event, sharing feedback, 
+    or just saying hello, fill out the form below or contact us directly.
+  </p>
+
+  <div class="contact-container">
+    <div class="contact-details">
+      <div class="detail">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <h4>Our Location</h4>
+          <p>123 Marrakech Street, Morocco</p>
+        </div>
+      </div>
+      <div class="detail">
+        <i class="fas fa-phone"></i>
+        <div>
+          <h4>Phone</h4>
+          <p>+212 648 973 038</p>
+        </div>
+      </div>
+      <div class="detail">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h4>Email</h4>
+          <p>mourtafiaah@gmail.com</p>
+        </div>
+      </div>
+      <div class="detail">
+        <i class="fas fa-clock"></i>
+        <div>
+          <h4>Opening Hours</h4>
+          <p>Mon - Fri: 8 AM - 6 PM<br>Sat - Sun: 9 AM - 5 PM</p>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form">
+      <div class="input-group">
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+      </div>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Subject">
+      <textarea placeholder="Your Message..." required></textarea>
+      <button type="submit" class="send-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="contacts">
+  <h1><img src="img/16.png" alt="Leaf" class="footer-leaf"> Contacts</h1>
+  <div class="contact-info">
+    <div class="contact-block">
+      <div class="icon-label">
+        <i class="fas fa-map-marker-alt"></i>
+        <span class="label">LOCATION</span>
+      </div>
+      <div class="contact-text">Morocco</div>
+    </div>
+    <div class="contact-block">
+      <div class="icon-label">
+        <i class="fas fa-phone"></i>
+        <span class="label">PHONE</span>
+      </div>
+      <div class="contact-text phone">+212 648973038</div>
+    </div>
+    <div class="contact-block">
+      <div class="icon-label">
+        <i class="fas fa-envelope"></i>
+        <span class="label">EMAIL</span>
+      </div>
+      <div class="contact-text">mourtafiaah@gmail.com</div>
+    </div>
+  </div>
+
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+
+  <div class="site-footer">
+    <p>&copy; 2025 Mourtafiaa Hiba. All rights reserved | 
+      <a href="/privacy-policy">Privacy Policy</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  document.querySelector('.contact-form').addEventListener('submit', e => {
+    e.preventDefault();
+    alert('Thank you! Your message has been sent successfully.');
+  });
+</script>
+</body>
+</html>

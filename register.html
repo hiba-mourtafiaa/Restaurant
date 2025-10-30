@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | BiteMe Restaurant</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="register.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="img/36.png" alt="Logo" />
+        <h1>BiteMe</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="AboutUs.html">ABOUT US</a></li>
+          <li><a href="Menu.html">MENU</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="register.html" class="active">ACCOUNT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="register">
+    <h2>Create an Account</h2>
+    <p class="register-intro">
+      Join <strong>BiteMe</strong> to receive exclusive offers, event updates, and priority reservations.
+    </p>
+    <div class="register-container">
+      <form class="register-form">
+        <div class="input-group">
+          <input type="text" placeholder="First Name" required />
+          <input type="text" placeholder="Last Name" required />
+        </div>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <input type="password" placeholder="Confirm Password" required />
+        <label class="checkbox">
+          <input type="checkbox" required /> I agree to the <a href="#">Terms & Conditions</a>
+        </label>
+        <button type="submit" class="register-btn">Register</button>
+      </form>
+    </div>
+
+    <div class="register-info">
+      <h3>Already have an account?</h3>
+      <a href="login.html" class="login-link">Log In</a>
+    </div>
+
+    </div>
+  </section>
+
+  <footer class="contacts">
+    <h1><img src="img/16.png" alt="Leaf" class="footer-leaf"> Contacts</h1>
+    <div class="contact-info">
+      <div class="contact-block">
+        <div class="icon-label">
+          <i class="fas fa-map-marker-alt"></i>
+          <span class="label">LOCATION</span>
+        </div>
+        <div class="contact-text">Morocco</div>
+      </div>
+      <div class="contact-block">
+        <div class="icon-label">
+          <i class="fas fa-phone"></i>
+          <span class="label">PHONE</span>
+        </div>
+        <div class="contact-text phone">+212 648973038</div>
+      </div>
+      <div class="contact-block">
+        <div class="icon-label">
+          <i class="fas fa-envelope"></i>
+          <span class="label">EMAIL</span>
+        </div>
+        <div class="contact-text">mourtafiaah@gmail.com</div>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <div class="site-footer">
+      <p>&copy; 2025 Mourtafiaa Hiba. All rights reserved | 
+        <a href="/privacy-policy">Privacy Policy</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.register-form').addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Your account has been successfully created!');
+    });
+  </script>
+</body>
+</html>
